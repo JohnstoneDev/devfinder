@@ -40,16 +40,14 @@ module.exports = {
     },
     colors : {
       'nord' : '#132043',
+      'cream' : '#f4f4f4',
       'blue' : '#0E21A0',
       'pinkish' : '#E5E9F0',
       'lighter-nord' : '#04364A',
-      'light-pinkish' : '#FIB4BB',
-      'very-light-pink': '#FDFOFO',
     },
     extend: {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
   ],
 }

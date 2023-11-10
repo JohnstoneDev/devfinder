@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 h2 h3 h4 h5 {
+    @apply font-extrabold
+  }
+
+  .searchbar, .devinfo {
+    @apply p-2 rounded-xl dark:bg-lighter-nord bg-pinkish
+  }
+
+  .searchbar > form {
+    @apply flex gap-4 items-center justify-center align-middle text-center
+  }
+
+  .searchbar > form > input {
+    @apply dark:bg-lighter-nord bg-pinkish border-none outline-none w-full placeholder:font-bold placeholder:text-[13px] tablet:placeholder:text-regular
+  }
+
+  .icon-container {
+    @apply text-button font-extrabold flex items-center text-blue
+  }
+
+  .devinfo {
+    @apply tablet:p-8
+  }
+
+  .info {
+    @apply p-2 flex flex-col space-y-3 gap-3 tablet:grid
+  }
+
+  .main-display {
+    @apply flex flex-col space-y-4 laptop:container laptop:mx-auto pt-16 laptop:px-24
+  }
+
+  .display {
+    @apply flex flex-col gap-2 space-y-4
+  }
+
+  button {
+    @apply bg-blue p-1.5 rounded-lg font-bold text-pinkish
+  }
+
+  .rest {
+    @apply space-y-3 tablet:col-span-2
+  }
+
+  .hero {
+    @apply flex gap-4 space-y-4 items-center tablet:items-start justify-evenly
+  }
+
+  .intro {
+    @apply flex flex-col gap-3
+  }
+
+  .intro > article {
+    @apply flex flex-col space-y-2
+  }
+
+  .avatar {
+    @apply rounded-full h-[100px] tablet:h-[200px]
+  }
+
+  .social-info {
+    @apply flex gap-3 items-center justify-between tablet:justify-around dark:bg-nord bg-cream p-2.5 rounded-lg text-center
+  }
+
+  .social-info > article > h4 {
+    @apply text-button font-extrabold
+  }
+
+  .links {
+    @apply flex flex-col tablet:grid tablet:grid-cols-2 p-3 gap-2
+  }
+
+  .links > article {
+    @apply flex gap-4 items-center
+  }
+}
