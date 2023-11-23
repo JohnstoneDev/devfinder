@@ -51,12 +51,16 @@ export const DevInfo = ({
 
             <article>
               <ion-icon name="logo-twitter"></ion-icon>
-              <p>{twitter_username || "Not Available" }</p>
+              <a href={twitter_username} target="_blank" rel="noreferrer" className="hover:underline">
+                {twitter_username || "Not Available" }
+              </a>
             </article>
 
             <article>
               <ion-icon name="link-sharp"></ion-icon>
-              <p>{blog || "Not Available"}</p>
+              <a href={blog} target="_blank" rel="noreferrer" className="hover:underline">
+                {blog || "Not Available"}
+              </a>
             </article>
 
             <article>
